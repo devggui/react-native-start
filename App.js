@@ -10,7 +10,8 @@ export default function App() {
     Animated.spring(offset.y, {
       toValue: 0,
       speed: 4,
-      useNativeDriver: true
+      useNativeDriver: true,
+      bounciness: 20
     }).start();
   }, [])
 
@@ -104,7 +105,7 @@ const styles = StyleSheet.create({
   },
 
   linkRegister: {
-    paddingTop: 10
+    paddingTop: 20
   },
 
   linkRegisterText: {
